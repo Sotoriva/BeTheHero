@@ -26,11 +26,6 @@ export default function Profile() {
         })
     }, [ongId]);
 
-
-
-
-
-
     async function handleDeleteIncident(id) {
         try {
             await api.delete(`incidents/${id}`, {
@@ -51,11 +46,6 @@ export default function Profile() {
         history.push('/');
     }
 
-
-
-
-
-    
     return (
         <div className="profile-container">
             <header>
